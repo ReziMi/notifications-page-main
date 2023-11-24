@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #F9FAFD;
+
+}
+
+.mainContainer{
+    padding: 24px 16px 45px;
+    display: flex;
+    flex-direction: column;  
+    background-color: white;
+    width: 375px;
+}
+
+.headerContainer{
+    display: flex;
+    width: 343px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.notifications{
+    color: #1C202B;
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 9px;
+}
+
+.numOfNotif{
+    width: 32px;
+    height: 25px;
+    border-radius: 6px;
+    background: #0A327B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 74px;
+}
+
+.markRead{
+    color:#5E6778;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background-color: #FFF;
+}
+
+.userInfoUnread{
+    border-radius: 8px;
+    background: #F7FAFD;
+    display: flex;
+    align-items:flex-start;
+    justify-content:left;
+    padding: 16px 16px 16px;
+    margin-bottom: 10px;
+}
+
+.userInfo{
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    align-items:flex-start;
+    justify-content:left;
+    padding: 16px 16px 16px;
+    margin-bottom: 10px;
+}
+
+.userPhoto{
+    width: 39px;
+    height: 39px;
+    border-radius: 39px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-right: 13px;
+}
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.userName{
+    color:#1C202B;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.notifyText{
+    color:#5E6778;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.postContent{
+    color: #5E6778;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.oval{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.time{
+    margin-top: 3px;
+    color:#939CAD;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.groupName{
+    color: #0A327B;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.privateMessage{
+    width: 263px;
+    height: 122px;
+    border-radius: 5px;
+    border: 1px solid #DDE7EE;
+    background: #FFF;
+    color:#5E6778;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px;
+    margin-top: 12px;
+}
+
+.kimberlyCase{
+    display: flex;
+    align-items: center;
+}
+
+.imgChess{
+    width: 39px;
+    height: 39px;
+    border-radius: 7px;
+    margin-left: 29px;
+}
+
+/* desktop screen size */
+@media (min-width:1440px) {
+    body {
+        padding: 63px 355px 89px;
+    }
+    
+    .mainContainer{
+        padding: 36px 30px 17px;
+        width: 730px;
+        height: fit-content;
+    }
+    
+    .headerContainer{
+        width: 670px;
+        margin-bottom: 33px;
+    }
+    
+    .notifications{
+        font-size: 24px;
+        margin-right: 11px;
+        padding-left: 2px;
+    }
+    
+    .numOfNotif{
+        margin-right: 356px;
+    }
+    
+    .markRead, .userName, .notifyText, .postContent, .groupName {
+        font-size: 16px;
+    }
+
+    .markRead:hover,
+    .postContent:hover,
+    .userName:hover,
+    .groupName:hover {
+        cursor: pointer;
+        color: #0A327B;
+    }
+    
+    
+    .userInfo{
+        padding: 18px 17px 20px;
+        margin-bottom: 10px;
+    }
+    
+    .userPhoto{
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        margin-right: 19px;
+    }
+    
+    .time{
+        margin-top: 3px;
+        color:#939CAD;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    
+    .privateMessage{
+        width: 566px;
+        height: 97px;
+        font-size: 16px;
+        font-size: 17px 20px 20px 20px;
+        padding: 16px;
+        margin-top: 13px;
+    }
+    
+    .kimberlyCase{
+        display: flex;
+        align-items: center;
+    }
+
+    .privateMessage:hover{
+        cursor: pointer;
+        background-color: #DDE7EE;
+    }
+    
+    .imgChess{
+        width: 45px;
+        height: 45px;
+        border-radius: 7px;
+        margin-left: 182px;
+    }  
+
+    .imgChess:hover{
+        cursor: pointer;
+    }
+}
