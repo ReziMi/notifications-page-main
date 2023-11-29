@@ -15,4 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         notificationsNum.textContent = "0";
     });
+
+    unreadUserInfos.forEach(function (userInfo, index) {
+        userInfo.addEventListener('click', function () {
+            userInfo.style.backgroundColor = 'white';
+            ovals[index].style.display = 'none';
+        });
+    });
 });
