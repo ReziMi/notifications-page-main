@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             userInfo.style.backgroundColor = 'white';
         });
 
+        // Set the text content of 'notificationsNum' to '0'
         notificationsNum.textContent = "0";
     });
 
@@ -20,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
         userInfo.addEventListener('click', function () {
             userInfo.style.backgroundColor = 'white';
             ovals[index].style.display = 'none';
+
+            // Decrease the text content of 'notificationsNum' by one
+            let currentCount = parseInt(notificationsNum.textContent, 10);
+            currentCount = Math.max(currentCount - 1, 0); // Ensure the count doesn't go below 0
+            notificationsNum.textContent = currentCount.toString();
         });
     });
 });
